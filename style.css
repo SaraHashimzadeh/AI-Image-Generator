@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -152,4 +153,45 @@ body {
     opacity: 1;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .prompt-actions {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1.2fr 1fr 1.1fr 1fr;
+}
+
+.prompt-actions :where(.custom-select, .generate-btn) {
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: var(--color-input);
+    border: 1px solid var(--color-border);
+}
+
+.prompt-actions .select-wrapper {
+    position: relative;
+    
+}
+
+.prompt-actions .select-wrapper::after {
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    padding-left: 7px;
+    color: var(--color-placeholder);
+    background: var(--color-input);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.prompt-actions .custom-select {
+    width: 100%;
+    outline: none;
+    height: 100%;
+    appearance: none;
 }
