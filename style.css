@@ -250,5 +250,17 @@ body {
     padding: 20px;
     display: flex;
     justify-content: flex-end;
-    background: linear-gradient(transparent , rgba(0,0,0,0.8));
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
 }
+
+.gallery-grid .img-card .img-download-btn {
+    backdrop-filter: blur(5px);
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+}
+
